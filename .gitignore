@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+myvenv
+*.ipynb
+*.txt
+*.xlsx
+*.html
+database.ini
