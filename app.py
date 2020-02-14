@@ -6,8 +6,6 @@ from flask import render_template
 from flask import request
 from flask import redirect
 
-from setup import create_table
-from setup_gloss import create_gloss_table
 from query_db import verify_terms
 
 
@@ -58,29 +56,28 @@ def home():
             return redirect(request.url)
         if bitext_file and allowed_file(bitext_file.filename) \
            and glossary_file and allowed_file(glossary_file.filename):
+
             direction = request.form['directions']
             outcome = request.form['outcomes']
-            bitext = bitext_file.read().decode('utf-8')
-            bitext = read_file(bitext)
-            create_table(direction, bitext)
-            glossary = glossary_file.read().decode('utf-8')
-            create_gloss_table(direction, read_file(glossary))
+
+            bitext = read_file(bitext_file.read().decode('utf-8'))
+            glossary = read_file(glossary_file.read().decode('utf-8'))
+
+            title = 'Errors'
+            successes = False
             if outcome == 'successes':
-                data = verify_terms(direction, successes=True)
-                if len(data) > 0:
-                    return render_template('results_successes.jinja2',
-                                           results=data)
-                else:
-                    return render_template('results_successes.jinja2',
-                                           no_res="- No results to display")
+                title = 'Successes'
+                successes = True
+            data = verify_terms(direction,
+                                bitext,
+                                glossary,
+                                successes=successes)
+            if len(data) > 0:
+                return render_template('results.jinja2', title=title,
+                                       results=data)
             else:
-                data = verify_terms(direction)
-                if len(data) > 0:
-                    return render_template('results_errors.jinja2',
-                                           results=data)
-                else:
-                    return render_template('results_errors.jinja2',
-                                           no_res="- No results to display")
+                return render_template('results.jinja2', title=title,
+                                       no_res="- No results to display")
     return render_template('home.jinja2')
 
 
