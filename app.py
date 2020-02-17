@@ -11,6 +11,7 @@ from query_db import verify_terms
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY').encode()
+app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
 
 ALLOWED_EXTENSIONS = {'txt'}
 
