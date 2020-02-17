@@ -115,6 +115,7 @@ def verify_terms(direction, bitext, glossary, successes=False):
         print('Connecting to the PostgreSQL database...')
         try:
             conn = psycopg2.connect(os.environ['DATABASE_URL'])
+            local_db = False
         except KeyError:
             conn = psycopg2.connect(**config())
             local_db = True
