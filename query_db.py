@@ -147,6 +147,9 @@ def verify_terms(direction, bitext, glossary, successes=False):
                                        src_lang, trg_lang,
                                        flag))
                 rows = cur.fetchall()
+
+                for table in ('bitext', 'gloss'):
+                    cur.execute("DROP TABLE IF EXISTS {}".format(table))
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
