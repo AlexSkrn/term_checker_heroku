@@ -40,6 +40,11 @@ def read_file(a_string):
     return res
 
 
+@app.route('/help')
+def help():
+    return render_template('help.jinja2')
+
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     """."""
@@ -61,8 +66,20 @@ def home():
             direction = request.form['directions']
             outcome = request.form['outcomes']
 
-            bitext = read_file(bitext_file.read().decode('utf-8'))
-            glossary = read_file(glossary_file.read().decode('utf-8'))
+            try:
+                bitext = read_file(bitext_file.read().decode('utf-8'))
+            except UnicodeDecodeError as err:
+                return render_template('invalid_file.jinja2',
+                                       err=err,
+                                       filename='bitext')
+            try:
+                glossary = read_file(glossary_file.read().decode('utf-8'))
+            except UnicodeDecodeError as err:
+                return render_template('invalid_file.jinja2',
+                                       err=err,
+                                       filename='glossary')
+            if not (bitext and glossary):
+                return render_template('invalid_file.jinja2')
 
             title = 'Errors'
             successes = False
@@ -84,4 +101,4 @@ def home():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 6738))
-    app.run(host='0.0.0.0', port=port)  # REMOVE debug=True
+    app.run(host='0.0.0.0', port=port, debug=True)  # REMOVE debug=True

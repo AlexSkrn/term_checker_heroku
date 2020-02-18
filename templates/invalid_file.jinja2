@@ -1,0 +1,13 @@
+{% extends 'base.jinja2' %}
+
+{% block title %}
+Invalid input
+{% endblock title %}
+
+{% block content %}
+Invalid content in one or both files
+<p>
+{% if err %}<span class="err">Error details: {{ err }} in {{ filename }}{% endif %}
+</p>
+
+{% endblock content %}

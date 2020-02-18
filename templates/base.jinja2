@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a id="home" href="{{ url_for('home') }}">Home</a>
+    <div class="topnav-right">
+      <a id="help" href="{{ url_for('help') }}">Help</a>
+    </div>
+  </div>
+
+  <title>DefiniTerms</title>
+
+  <div class="main">
+
+  	<h1>{% block title %} {% endblock title %}</h1>
+
+
+    <h1>{% block subtitle %} {% endblock subtitle %}</h1>
+
+      {% block content %} {% endblock content %}
+
+  </div>
+
+
+
+		<footer>
+		  <p>
+		    <a href="mailto:alex.g.skrn@gmail.com"> alex.g.skrn@gmail.com</a>
+		  </p>
+		</footer>
+
+</body>
+</html>
