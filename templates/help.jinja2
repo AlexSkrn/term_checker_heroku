@@ -1,9 +1,27 @@
 {% extends 'base.jinja2' %}
 
 {% block title %}
-Help
+
 {% endblock title %}
 
 {% block content %}
-Under development
+<h2>Как получить двуязычный txt-файл с разделителями табуляцией</h2>
+
+<h3>Из двух файлов (в одном оригинал, в другом перевод)</h3>
+  <p>С помощью функции Align программы OmegaT получить tmx-файл. Либо
+  с помощью функции Align программы Trados Studio получить sdlxliff-файл.</p>
+
+<h3>Из tmx-файла</h3>
+  <p>
+    С помощью Okapi Olifant или Heartsome TMX Editor.
+  </p>
+
+<h3>Из sdlxliff (Trados Studio)</h3>
+<p>С помощью Okapi Framework / Rainbow: Add file -> Language Encoding ->
+  Utilities -> Conversion Utilities -> Convert File Format -> Output format: tmx document ->
+  Execute. Затем как с tmx-файлом выше.
+</p>
+<p>
+  Проверить txt-файл в Notepad++ на наличие некорректных символов.
+  </p>
 {% endblock content %}

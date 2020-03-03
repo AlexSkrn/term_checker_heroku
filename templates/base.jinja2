@@ -7,13 +7,17 @@
 <body>
 
   <div class="topnav">
-    <a id="home" href="{{ url_for('home') }}">Home</a>
+    <a id="home" href="{{ url_for('home') }}">
+      <img src="{{ url_for('static', filename='home.png')}}" />
+    </a>
     <div class="topnav-right">
-      <a id="help" href="{{ url_for('help') }}">Help</a>
+      <a id="help" href="{{ url_for('help') }}">
+        <img src="{{ url_for('static', filename='help-64.png')}}" />
+      </a>
     </div>
   </div>
 
-  <title>DefiniTerms</title>
+  <title>DefiniTerms - проверка перевода терминологии по глоссарию</title>
 
   <div class="main">
 

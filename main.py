@@ -81,10 +81,10 @@ def home():
             if not (bitext and glossary):
                 return render_template('invalid_file.jinja2')
 
-            title = 'Errors'
+            title = 'Ошибки в переводе терминов'
             successes = False
             if outcome == 'successes':
-                title = 'Successes'
+                title = 'Правильно переведенные термины'
                 successes = True
             data = verify_terms(direction,
                                 bitext,
@@ -95,10 +95,10 @@ def home():
                                        results=data)
             else:
                 return render_template('results.jinja2', title=title,
-                                       no_res="- No results to display")
+                                       no_res="- Результатов не найдено")
     return render_template('home.jinja2')
 
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 6738))
-    app.run(host='0.0.0.0', port=port, debug=True)  # REMOVE debug=True
+    app.run(host='0.0.0.0', port=port)  # REMOVE debug=True

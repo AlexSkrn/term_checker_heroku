@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   padding: 0.4rem;
   background-color: #f5f5f5;
-  max-width: 640px;
+  max-width: 840px;
 }
 
 .topnav-right {
@@ -30,7 +30,7 @@ body {
 .main {
   margin: 0 auto;
   padding-top: 64px;
-  max-width: 640px;
+  max-width: 840px;
 }
 
 .main h1 { margin-top: 0; }
@@ -55,6 +55,11 @@ body {
 .results tr:hover {background-color: #f5f5f5;}
 
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 footer {
   position: absolute;
@@ -65,5 +70,5 @@ footer {
   padding: 0.1rem;
   background-color: #f5f5f5;
   text-align: center;
-  max-width: 640px;
+  max-width: 840px;
 }

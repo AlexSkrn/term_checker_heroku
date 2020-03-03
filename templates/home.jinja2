@@ -1,37 +1,37 @@
 {% extends 'base.jinja2' %}
 
 {% block title %}
-Terminology verification
+Проверка терминологии
 {% endblock title %}
 
 {% block content %}
 
-<p>Verify the terminology translation in your bilingual text file
-  by using a bilingual glossary</p>
+<p>Проверка перевода терминологии в двуязычном текстовом файле
+  с помощью двуязычного глоссария</p>
 
 <form method=post enctype=multipart/form-data>
   <fieldset>
     <!-- <legend>Verification parameters:</legend> -->
-  <input type="radio" name="directions" id="direction1" value="eng-rus"> English-Russian </input><br>
-  <input type="radio" name="directions" id="direction2" value="rus-eng" required> Russian-English </input><br><br>
+  <input type="radio" name="directions" id="direction1" value="eng-rus"> английский-->русский </input><br>
+  <input type="radio" name="directions" id="direction2" value="rus-eng" required> русский-->английский </input><br><br>
 
-  <input type="radio" name="outcomes" id="outcome1" value="errors"> Get errors </input><br>
-  <input type="radio" name="outcomes" id="outcome2" value="successes" required> Get successes </input><br><br>
+  <input type="radio" name="outcomes" id="outcome1" value="errors"> Искать ошибки в переводе терминов</input><br>
+  <input type="radio" name="outcomes" id="outcome2" value="successes" required> Искать правильно переведенные термины</input><br><br>
 
-  <label for=bitext>Bilingual_Text.txt (&lt 1Mb)*: </label>
+  <label for=bitext>двуязычный_текст.txt (&lt 1Mb)*: </label>
   <input type=file name=bitext id=file1 required><br><br>
 
-  <label for=glossary>Bilingual_Glossary.txt (&lt 0.5Mb)**: </label>
+  <label for=glossary>двуязычный_глоссарий.txt (&lt 0.5Mb)**: </label>
   <input type=file name=glossary id=file2 required><br><br>
 
-  <input type=submit value=Verify class="button"/>
+  <input type=submit value=Проверить! class="button"/>
 
   </fieldset>
 </form>
 
-<p>*A dual-language tab-delimited txt file, one pair of sentences per line</p>
+<p>*Двуязычный txt-файл с разделителями табуляцией, по одной паре предложений на строке</p>
 
-<p>**A dual-language tab-delimited txt file, one pair of terms per line</p>
+<p>**Двуязычный txt-файл с разделителями табуляцией, по одной паре терминов на строке</p>
 </div>
 
 <script>
@@ -44,10 +44,10 @@ Terminology verification
 
     uploadField1.onchange = function() {
         if(this.files[0].size > 1 * 1024 * 1024){
-           alert("File is too big - max size is 1Mb!");
+           alert("Слишком большой файл - максимальный размер 1Mb!");
            this.value = "";
         } else if (!hasExtension('file1', ['.txt'])) {
-          alert("Wrong extension - only txt allowed!");
+          alert("Расширение файла должно быть txt!");
           this.value = "";
         };
     };
@@ -56,10 +56,10 @@ Terminology verification
 
     uploadField2.onchange = function() {
         if(this.files[0].size > 0.5 * 1024 * 1024){
-           alert("File is too big - max size is 0.5Mb!");
+           alert("Слишком большой файл - максиальный размер 0.5Mb!");
            this.value = "";
          } else if (!hasExtension('file1', ['.txt'])) {
-           alert("Wrong extension - only txt allowed!");
+           alert("Расширение файла должно быть txt!");
            this.value = "";
         };
     };
