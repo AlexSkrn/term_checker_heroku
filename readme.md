@@ -9,7 +9,8 @@
 Как получить такое форматирование см. http://www.definiterms.com/help
 
 Главная страница сайта:
-![main](/images/main.png)
+
+![home_page](/images/home_page.png)
 
 Найденные ошибки даются в таблице -- номер строки, исходное предложение, его перевод,
 термин из глоссария, ожидаемый перевод из глоссария.
@@ -17,8 +18,8 @@
 Примеры найденных ошибок в переводе (т.е. перевод термина не соответствует тому,
 как перевод этого термина определен в глоссарии):
 
-![main](/images/example_1.png)
+![example_1](/images/example_1.png)
 
-![main](/images/example_2.png)
+![example_2](/images/example_2.png)
 
-![main](/images/example_3.png)
+![example_3](/images/example_3.png)
