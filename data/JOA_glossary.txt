@@ -1,0 +1,87 @@
+Effective Date	Дата Вступления в Силу
+AFE	РНР
+Affiliate	Аффилированное Лицо
+Agreed Interest Rate	Согласованная Процентная Ставка
+Appraisal Well	Оценочная Скважина
+Business Day	Рабочий День
+Calendar Quarter	Календарный Квартал
+Calendar Year	Календарный Год
+Commercial Discovery	Коммерческое Открытие
+Completion	Заканчивание
+Consequential Loss	Вытекающие Убытки
+Contract Area	Контрактная Территория
+Cost Hydrocarbons	Компенсационные Углеводороды
+Crude Oil	Сырая Нефть
+Deepening	Углубление
+Development Plan	План Разработки
+Development Well	Эксплуатационная Скважина
+Discovery	Открытие
+Dispute	Спор
+Entitlement	Доля в Продукции
+Environmental Loss	Экологические Убытки
+Exclusive Operation	Эксклюзивная Операция
+Exclusive Well	Эксклюзивная Скважина
+Exploitation Area	Зона Эксплуатации
+Exploitation Period	Срок Эксплуатации
+Exploration Period	Период Геологоразведочных Работ
+Exploration Well	Разведочная Скважина
+G & G Data	Геоинформация
+Government Oil & Gas Company	Государственная Нефтегазовая Компания
+Gross Negligence	Грубая Халатность
+Willful Misconduct	Умышленное Нарушение
+Hydrocarbons	Углеводороды
+Joint Account	Совместный Счет Бухгалтерского Учета
+Joint Operations	Совместные Операции
+Joint Property	Совместная Собственность
+Regulations	Постановления
+Minimum Work Obligations	Минимальные Рабочие Обязательства
+Natural Gas	Природный Газ
+Non-Consenting Party	Неприсоединившаяся Сторона
+Non-Operator	СНО
+Operating Committee	Руководящий Комитет
+Participating Interest	Доля Участия
+Plugging Back	Тампонаж
+Plug Back	Тампонировать
+Profit Hydrocarbons	Прибыльные Углеводороды
+Recompletion	Повторное Заканчивание
+Recomplete	Повторно Заканчивать
+Reworking	Повторная Разработка
+Security	Обеспечение
+Senior Supervisory Personnel	Высшее Руководство
+Sidetracking	Забуривание Нового Ствола из Существующей Скважины
+Testing	Тестирование
+Urgent Operational Matters	Неотложные Операционные Вопросы
+Work Program and Budget	Программа Работ и Бюджет
+Zone	Зона
+Secondee	Прикомандированное Лицо
+Indemnitees	Получатели Возмещения
+HSE	ОТиЗОС
+Production Bonus“	Производственный Бонус
+Defaulting Party	Нарушающая Сторона
+Default Notice	Уведомление о Нарушении
+Default Period	Период Нарушения
+Amount in Default	Сумма Задолженности
+Total Amount in Default	Общая Сумма Задолженности
+Reserve Fund	Резервный Фонд
+Repeat Defaulting Party	Повторно Нарушающая Сторона
+Buy-Out Option	Опцион на Выкуп
+Appraised Value	Оценочная Стоимость
+Option Notice	Уведомление об Опционе
+Acquiring Party	Приобретающая Сторона
+Transfer Date	Дата Передачи
+Collateral	 Дополнительное Обеспечения
+Discounted Net Cost	Дисконтированная Себестоимость
+Discounted Net Value	Дисконтированная Чистая Стоимость
+Discount Rate	Ставка Дисконта
+Cash Transfer	Передача посредством Денежных Средств
+Cash Value	Денежная Стоимость
+Encumbrance	Обременение
+Transfer	Передача
+Lien Holder	Держатель Обременения
+Disagreeing Party	Несогласная Сторона
+U.S. Party	Американская Сторона
+Non-U.S. Party	Неамериканская Сторона
+Venture Information	Рабочая Информация
+Force Majeure	Форс-мажор
+Notice of Dispute	Уведомление о Наличии Спора
+Senior Executive	Главное Должностное Лицо

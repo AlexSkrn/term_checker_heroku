@@ -2,7 +2,6 @@
 __pycache__
 myvenv
 *.ipynb
-*.txt
 *.xlsx
 *.html
 database.ini
